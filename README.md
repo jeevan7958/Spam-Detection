@@ -45,6 +45,9 @@ This project solves common NLP pitfalls, such as:
 * **Recall:** **~89.5%**
 * *Observation:* The model catches nearly 9 out of 10 spam messages. The missed 10% are usually extremely short, ambiguous messages (e.g., "Hi", "Call me") that lack distinct spam patterns.
 
+* **F1-Score:** **~94.0%**
+* *Observation:* A high F1 score confirms that the model is robust and handles the class imbalance effectively. It proves the model isn't just "guessing safe" to inflate its accuracy numbers; it is genuinely learning the characteristics of spam.
+
 **Key Observations from Results:**
 
 1. **Structural Signals are Critical:** The *Feature Importance* graph reveals that **`Caps_Ratio`** (percentage of uppercase letters) and **`Has_Link`** are top-tier predictors, often outweighing specific words. This proves the "Hybrid" hypothesis: how a message is written is just as important as what it says.
@@ -75,8 +78,8 @@ This project solves common NLP pitfalls, such as:
 **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/jeevan7958/Spam-Detection
-cd spam-detection
+git clone https://github.com/jeevan7958/Text-Classification
+cd text-classification
 
 ```
 
